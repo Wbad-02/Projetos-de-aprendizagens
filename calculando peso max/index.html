@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto crafterrrs</title>
+</head>
+
+<body>
+    <div class="container">
+    
+        <div class="container__informacoes">
+            <div class="container__texto">
+                <h1>peso<span class="container__texto-azul"> total</span></h1>
+
+                <div class="container__campo">
+                    <label class="texto__paragrafo">Peso da bolsa</label>
+                    <input class="container__input" id="pesoBolsa" type="number" min="1">
+                </div>
+                
+                <div class="container__campo">
+                    <label class="texto__paragrafo">Peso da bota</label>
+                    <input class="container__input" id="pesoBotas" type="number" min="1">
+                </div>
+
+                <div class="container__campo">
+                    <label class="texto__paragrafo">Peso da montaria</label>
+                    <input class="container__input" id="pesoMontaria" type="number" min="1">
+                </div>
+
+                <div class="container__campo">
+                    <label class="texto__paragrafo">Percentual da torta</label>
+                    <input class="container__input" id="pesoTorta" type="number" min="1">
+                </div>
+            </div>
+            
+            <div class="calculos container__botoes">
+                <button onclick="calcular()" id="btn-calcular1" class="container__botao">Calcular</button>
+                <button onclick="reiniciar()" id="btn-reiniciar1" class="container__botao">Reiniciar</button>
+            </div>
+
+            <div class="container__campo" id="resultadoTotal">
+                <span class="texto__paragrafo"></span>
+            </div>
+        </div>
+
+        <div class="container__informacoes">
+            <p id="cargaMontaria"></p>
+        </div>
+
+        <div class="container__informacoes">
+            <div class="container__texto">
+                <h1>peso<span class="container__texto-azul"> recursos</span></h1>
+
+                <div class="container__campo">
+                    <label class="texto__paragrafo">Recurso 1</label>
+                    <input class="container__input" id="pesoR1" type="number" min="1">
+                </div>
+                
+                <div class="container__campo">
+                    <label class="texto__paragrafo">Quantidade</label>
+                    <input class="container__input" id="quantidadeR1" type="number" min="1">
+                </div>
+            </div>
+            
+            <div class="calculos container__botoes">
+                <button onclick="calcularRecurso()" id="btn-calcular2" class="container__botao">Calcular</button>
+                <button onclick="reiniciarRecurso()" id="btn-reiniciar2" class="container__botao">Reiniciar</button>
+                <button onclick="diferenca()" id="btn-diferenca" class="container__botao">Diferença</button>
+            </div>
+
+            <div class="container__texto" id="resultadoRecursos">
+                <label class="texto__paragrafo"></label>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js" defer></script>
+</body>
+</html>
